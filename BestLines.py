@@ -11,6 +11,4 @@ def Primes(n):
         p += 1
     prime[0]= False
     prime[1]= False
-    for p in range(n + 1):
-        if prime[p]:
-            print(p)
+    return list([i for i in range(len(prime)) if prime[i] == True])
