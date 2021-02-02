@@ -1,0 +1,10 @@
+a = open('XAUNN.INP')
+X, k = a.read().split()
+a.close()
+X, k = int(X), int(k)
+X = list(str(X))
+for i in range(k):
+	X.remove(max(X))
+b = open('XAUNN.OUT', 'w+')
+b.write(''.join(X))
+b.close()
